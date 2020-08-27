@@ -184,8 +184,8 @@ span{
   background: rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   padding: 7px 20px !important;
-
 }
+
 .content-right{
   overflow-x: auto;
   min-width: 892px;
@@ -224,8 +224,8 @@ span{
   .row{
     margin-left: 0;
     margin-right: 0;
-    overflow: auto;  
-  }  
+    overflow: auto;
+  }
 }
 .portal-content{
   .card-list:last-of-type{
@@ -233,8 +233,8 @@ span{
   }
 }
 .pagos-content{
-  .custom-select{ 
-    width: 341px !important;
+  .custom-select{
+    // width: 341px !important;
   }
 }
 /*--------------------------------------------------------------
@@ -380,7 +380,7 @@ body {
 --------------------------------------------------------------*/
 .card-header{
 	box-shadow: $card-box;
-	padding: 0; 
+	padding: 0;
 }
 .card-header:first-child{
 	border-radius: 12px;
@@ -1022,4 +1022,3 @@ section {
     padding: 2px 0;
   }
 }
-
