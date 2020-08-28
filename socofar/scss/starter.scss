@@ -370,10 +370,9 @@ body {
 //   color: #777;
 // }
 
-
-
-
-
+.nav-link.active{
+  background-color: $socofar-primary_color !important}
+  
 
 /*--------------------------------------------------------------
 # Resume
@@ -788,6 +787,10 @@ section {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+}
+
+.input-group-text {
+  background-color: none;
 }
 
 .contact .php-email-form .form-group {

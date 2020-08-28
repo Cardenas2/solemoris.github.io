@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/starter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Socofar - Configuración</title>
+    <title>Socofar - Pago no realizado</title>
   </head>
   <body class="w-1200">
     <header class="fixed-top bg-primary">
@@ -14,12 +14,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="portal.html">Home <span class="sr-only"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item active"><a class="nav-link" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item dropdown active">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog mr-1"></i> Configuración</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
@@ -53,62 +54,26 @@
           </div>
         </div>
         <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5 content-right mx-auto" data-aos="fade-up" data-aos-delay="100">
-          <h3>Configuración</h3>
+          <h3>Pago no realizado</h3>
           <div class="card card-content">
-            <div class="row d-flex flex-row px-5 pt-5 mb-0 justify-items-between  align-items-start">
-                <div class="col-4">
-                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Cambiar Contraseña</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Agregar Correo</a>
-                  </div>
-                </div>
-                <div class="col-8">
-                  <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                      <div class="col-9">
-                        <div class="form-group w-100">
-                          <label class="mb-1">Nueva Contraseña</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Nueva contraseña">
-                            <div class="input-group-append">
-                              <div class="input-group-text"><a href=""><i class="fa fa-eye" aria-hidden="false"></i></a></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group w-100">
-                          <label class="mb-1">Confirma tu Contraseña</label>
-                            <div class="input-group">
-                              <input type="password" class="form-control" id="inlineFormInputGroupUsername" placeholder="Repite tu contraseña">
-                              <div class="input-group-append">
-                                <div class="input-group-text"><a href=""><i class="fa fa-eye-slash " aria-hidden="true"></i></a></div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="row mt-2 mb-5 row-buttons">
-                          <a class="btn btn-primary mr-3" href="#">Cambiar contraseña</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                      <div class="col-12">
-                        <p>Agrega un segundo correo para enviar copia de los comprobantes de pago</p>
-                        <div class="d-flex justify-content-left">
-                            <div>
-                              <input type="text" class="form-control" id="" placeholder="Escribe tu Correo" disabled>
-                            </div>
-                              <a href="" class="btn btn-primary ml-3"><i class="fas fa-edit mr-1" aria-hidden="true"></i>Editar Correo</a>
-                        </div>
-                        <div class="row mt-3 mb-5 row-buttons">
-                          <a class="btn btn-primary mr-3" href="#">Agregar Correo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+            <div class="row d-flex flex-row px-5 pt-5 mb-0 justify-items-between  align-items-start mb-4">
+              <div class="col-2 text-center p-0">
+                <img src="./assets/img/error.svg" alt="">
+              </div>
+              <div class="col-10">
+                <h2>Intenta nuevamente</h2>
+                <p>Hubo un problema con tu transferencia.</p>
+                <p>No se ha descontado ningún monto desde tu cuenta.</p>
+                <p>Espera unos minutos e intenta nuevamente.</p>
+              </div>
             </div>
           </div>
+
           <br>
+          <div class="row mt-2 mb-5 row-buttons">
+            <a class="btn btn-primary mr-3" href="portal.html">Intentar Nuevamente <i class="fas fa-reply ml-1"></i></a>
+            <a class="btn btn-outline-primary" href="#">Cerrar Sesión</a>
+          </div>
         </div>
       </div>
     </div>
@@ -134,7 +99,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-
-
   </body>
 </html>
