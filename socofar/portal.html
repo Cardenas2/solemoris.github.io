@@ -8,14 +8,13 @@
           <title>Socofar - Pedidos</title>
      </head>
      <body class="w-1200">
-
+          <!-- HEADER    -->
           <header class="fixed-top bg-primary">
                <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav ml-auto">
                               <li class="nav-item active">
@@ -38,6 +37,7 @@
                     </div>
                </nav>
           </header>
+
           <div class="portal-content d-flex">
                <div class="row mx-auto">
                     <div class="col-lg-3 text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
@@ -61,33 +61,35 @@
                     </div>
 
                     <!-- <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5 content-right mx-auto" data-aos="fade-up" data-aos-delay="100"> -->
-                    <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-12 col-lg-9" data-aos="fade-up" data-aos-delay="100">
                          <h3>Resumen de documentos</h3>
                          <h2>búsqueda avanzada</h2>
                          <div class="card mb-4 pt-3">
-               <form action="" class="d-flex justify-content-between align-items-end row">
-               <div class="form-group col-sm-12 col-lg-2 mb-1 mt-1">
-               <label for="inputDoc">Nº Documento</label>
-               <input type="text" id="inputDoc" class="form-control" placeholder="334455666">
-               </div>
-               <div class="form-group col-sm-12 col-lg-4 mb-1 mt-1">
-               <label for="inputSucursal">Sucursal</label>
-               <select name="" class="custom-select" id="inputSucursal" >
-               <option selected>La Dehesa - 334456765</option>
-               <option value="1">One</option>
-               <option value="2">Two</option>
-               <option value="3">Three</option>
-               </select>
-               </div>
-               <div class="form-group col-xs-6 mb-1 mt-1">
-               <label for="startDate">Fecha de vencimiento</label>
-               <input id="startDate"placeholder="01/06/2020"/>
-               </div>
-               <div class="form-group col-xs-6 mb-1 mt-1">
-               <label for="endDate"></label>
-               <input id="endDate"placeholder="01/06/2020"/>
-               </div>
-               <button type="submit" class="btn btn-outline-primary align-self-end mb-1 mt-1"> buscar </button>
+                              <form action="" class="d-flex justify-content-between align-items-end row pt-2 pb-2">
+                                   <div class="form-group col-12 col-lg-2">
+                                        <label for="inputDoc">Nº Documento</label>
+                                        <input type="text" id="inputDoc" class="form-control" placeholder="334455666">
+                                   </div>
+                                   <div class="form-group col-12 col-lg-4">
+                                        <label for="inputSucursal">Sucursal</label>
+                                        <select name="" class="custom-select" id="inputSucursal" >
+                                             <option selected>La Dehesa - 334456765</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                        </select>
+                                   </div>
+                                   <div class="form-group col-11 col-lg-2">
+                                        <label for="startDate">Fecha de vencimiento</label>
+                                        <input id="startDate"placeholder="01/06/2020"/>
+                                   </div>
+                                   <div class="form-group col-11 col-lg-2">
+                                        <label for="endDate"></label>
+                                        <input id="endDate"placeholder="01/06/2020"/>
+                                   </div>
+                                   <div class="form-group col-12 col-lg-2">
+                                        <button type="submit" class="btn btn-outline-primary  align-self-end align-bottom"> buscar </button>
+                                   </div>
                </form>
                </div>
                <h2>documentos pendientes</h2>
