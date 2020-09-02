@@ -7,81 +7,81 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
           <title>Socofar - Pedidos</title>
      </head>
-     <body class="w-1200">
+     <body>
           <!-- HEADER  -->
-          <header class="fixed-top bg-primary">
-               <nav class="navbar navbar-expand-lg navbar-dark">
-                    <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                    </button>
+         <header class="fixed-top bg-primary">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                   <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                             <li class="nav-item">
+                                  <a class="nav-link nav-soc" href="portal.html">Home <span class="sr-only"></span></a>
+                             </li>
+                             <li class="nav-item active">
+                                  <a class="nav-link nav-soc" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a>
+                             </li>
+                             <li class="nav-item">
+                                  <a class="nav-link nav-soc" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a>
+                             </li>
+                             <li class="nav-item dropdown bg-primary">
+                                  <a class="nav-link nav-soc dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                       <i class="fas fa-cog mr-1"></i> Configuración
+                                  </a>
+                                  <div class="dropdown-menu bg-primary">
+                                       <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
+                                       <a class="dropdown-item" href="opciones.html">Agregar Correo</a>
+                                       <a class="dropdown-item" href="#">Salir</a>
+                                  </div>
+                             </li>
+                        </ul>
+                   </div>
+              </nav>
+         </header>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                         <ul class="navbar-nav ml-auto">
-                              <li class="nav-item">
-                                   <a class="nav-link nav-soc" href="portal.html">Home <span class="sr-only"></span></a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link nav-soc" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
-                                   <a class="nav-link nav-soc" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item dropdown bg-primary active">
-                                   <a class="nav-link nav-soc dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-cog mr-1"></i> Configuración
-                                   </a>
-                                   <div class="dropdown-menu bg-primary">
-                                        <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
-                                        <a class="dropdown-item" href="opciones.html">Agregar Correo</a>
-                                        <a class="dropdown-item" href="#">Salir</a>
+         <!--CONTENT-->
+          <div class="container soc-container">
+               <div class="row">
+                    <div class="col-lg-3 text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
+                         <div class="card resume-content">
+                              <div class="card-header"><img src="./assets/img/mask-resume.svg" alt=""></div>
+                              <div class="card-body">
+                                   <div class="card-text">
+                                        <span>Nombre Empresa</span> <p class="text-truncate">Clínica Alemana S.A</p>
                                    </div>
-                              </li>
-                         </ul>
+                                   <div class="card-text">
+                                        <span>RUT empresa</span> <p>96.770.100-9</p>
+                                   </div>
+                                   <div class="card-text">
+                                        <span>Correo Corporativo</span> <p class="text-truncate">finanzas@interno.clini...</p>
+                                   </div>
+                                   <div class="card-text">
+                                        <span>Deuda Total</span> <h4 class="mt-1">$100.000.000</h4>
+                                   </div>
+                              </div>
+                         </div>
                     </div>
-               </nav>
-          </header>
 
-
-     <div class="portal-content d-flex">
-     <div class="row mx-auto">
-     <div class="col-lg-3 aos-init aos-animate text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
-     <div class="card resume-content float-right">
-     <div class="card-header"><img src="./assets/img/mask-resume.svg" alt=""></div>
-     <div class="card-body">
-     <div class="card-text">
-     <span>Nombre Empresa</span> <p class="text-truncate">Clínica Alemana S.A</p>
-     </div>
-     <div class="card-text">
-     <span>RUT empresa</span> <p>96.770.100-9</p>
-     </div>
-     <div class="card-text">
-     <span>Correo Corporativo</span> <p class="text-truncate">finanzas@interno.clini...</p>
-     </div>
-     <div class="card-text">
-     <span>Deuda Total</span> <h4 class="mt-1">$100.000.000</h4>
-     </div>
-     </div>
-     </div>
-     </div>
-     <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5 mx-auto content-right" data-aos="fade-up" data-aos-delay="100"> <!-- content-right -->
-     <h3>Pedidos</h3>
-     <h2>Últimos pedidos</h2>
-     <div class="card card-content card-row mb-4">
-     <form action="" class="d-flex justify-content-between align-items-end row">
-     <div class="form-group col-sm-12 col-lg-2 mb-1 mt-1">
-     <label for="inputDoc">Nº pedido</label>
-     <input type="text" id="inputDoc" class="form-control" placeholder="334455666">
-     </div>
-     <div class="form-group col-sm-12 col-lg-4 mb-1 mt-1">
-     <label for="inputSucursal">Sucursal</label>
-     <select name="" class="custom-select" id="inputSucursal" >
-     <option selected>La Dehesa - 334456765</option>
-     <option value="1">One</option>
-     <option value="2">Two</option>
-     <option value="3">Three</option>
-     </select>
-     </div>
+                    <div class="col-12 col-lg-9" data-aos="fade-up" data-aos-delay="100">
+                         <h3>Pedidos</h3>
+                         <h2>búsqueda avanzada</h2>
+                         <div class="card card-content card-row mb-4">
+                              <form action="" class="d-flex justify-content-between align-items-end row">
+                                   <div class="form-group col-sm-12 col-lg-2 mb-1 mt-1">
+                                        <label for="inputDoc">Nº pedido</label>
+                                        <input type="text" id="inputDoc" class="form-control" placeholder="334455666">
+                                   </div>
+                                   <div class="form-group col-sm-12 col-lg-4 mb-1 mt-1">
+                                        <label for="inputSucursal">Sucursal</label>
+                                        <select name="" class="custom-select" id="inputSucursal" >
+                                             <option selected>La Dehesa - 334456765</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                        </select>
+                                   </div>
      <div class="form-group col-xs-6 mb-1 mt-1">
      <label for="startDate">Fecha de vencimiento</label>
      <input id="startDate"placeholder="01/06/2020"/>

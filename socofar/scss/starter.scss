@@ -219,14 +219,16 @@ ul > li.nav-item.dropdown.show > div > a:hob
   overflow-x: auto;
   min-width: 892px;
 }
-
+body.w-1200.soc-body {
+padding-top: 50px
+}
 .w-1200{
   .navbar{
-    max-width: 1200px;
-    margin: auto;
+    // max-width: 1200px;
+    // margin: auto;
   }
   .card-list, .card-bancos, .card-content{
-    width: 850px;
+    //width: 850px;
   }
 }
 
@@ -256,6 +258,9 @@ ul > li.nav-item.dropdown.show > div > a:hob
     overflow: auto;
   }
 }
+.soc-container {
+padding-top: 100px;
+} 
 .portal-content{
   .card-list:last-of-type{
     background: #E4E9EE;
