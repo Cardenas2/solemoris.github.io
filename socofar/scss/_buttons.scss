@@ -10,11 +10,12 @@ button:focus {
 	box-shadow: $btn-primary-box;
 	padding: $btn-primary-p;
 	text-transform: uppercase;
+     display: inline-block;
 }
 .btn-primary{
 	background: $btn-primary_bg;
 	text-transform: uppercase;
-	display: flex;
+	display: inline-block;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.05em;
@@ -41,7 +42,7 @@ button:focus {
 
 .input-group>.input-group-append>.btn{
     border: 0;
-    border-radius: 0.25em;    
+    border-radius: 0.25em;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
 .gj-datepicker {
