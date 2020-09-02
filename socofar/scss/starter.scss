@@ -260,7 +260,7 @@ padding-top: 50px
 }
 .soc-container {
 padding-top: 100px;
-} 
+}
 .portal-content{
   .card-list:last-of-type{
     background: #E4E9EE;
@@ -1058,4 +1058,9 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+}
+.gj-datepicker .input-group-append {
+    right: 10px;
+    position: absolute;
+    top: 8px;
 }
