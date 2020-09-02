@@ -8,7 +8,7 @@
           <title>Socofar - Pedidos</title>
      </head>
      <body class="w-1200">
-          <!-- HEADER    -->
+          <!-- HEADER  -->
           <header class="fixed-top bg-primary">
                <nav class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
@@ -24,9 +24,12 @@
                                    <a class="nav-link nav-soc" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item">
-                                   <a class="nav-link nav-soc" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
-                              <li class="nav-item dropdown">
-                                   <a class="nav-link  nav-soc dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog mr-1"></i> Configuración</a>
+                                   <a class="nav-link nav-soc" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item dropdown bg-primary active">
+                                   <a class="nav-link nav-soc dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-cog mr-1"></i> Configuración
+                                   </a>
                                    <div class="dropdown-menu bg-primary">
                                         <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
                                         <a class="dropdown-item" href="opciones.html">Agregar Correo</a>
@@ -38,6 +41,7 @@
                </nav>
           </header>
 
+          <!-- CONTENT -->
           <div class="portal-content d-flex">
                <div class="row mx-auto">
                     <div class="col-lg-3 text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
@@ -224,14 +228,14 @@
                               <h4 class="m-0 pl-5">$10.000.000</h4>
                          </div>
                          <h2>selección de medio de pago</h2>
-                         <div class="card-bancos d-flex justify-content-between align-items-center col-12">
-                              <div class="card"><img src="assets/img/banco-estado.png" alt="banco estado"></div>
-                              <div class="card mb-1 mt-1"><img src="assets/img/banco-chile.png" alt="banco de chile"></div>
-                              <div class="card mb-1 mt-1"><img src="assets/img/banco-bci.png" alt="banco bci"></div>
-                              <div class="card mb-1 mt-1"><img src="assets/img/banco-santander.png" alt="banco santander"></div>
-                              <div class="card mb-1 mt-1"><img src="assets/img/banco-scotiabank.png" alt="banco scotiabank"></div>
+                         <div class="row justify-content-between">
+                              <div class="card col-12 col-md-2 mb-1 pt-3 pb-3"><img class="m-auto" src="assets/img/banco-estado.png" alt="banco estado" width="103"></div>
+                              <div class="card col-12 col-md-2 mb-1 pt-3 pb-3"><img class="m-auto" src="assets/img/banco-chile.png" alt="banco de chile" width="98"></div>
+                              <div class="card col-12 col-md-2 mb-1 pt-3 pb-3"><img class="m-auto" src="assets/img/banco-bci.png" alt="banco bci" width="62"></div>
+                              <div class="card col-12 col-md-2 mb-1 pt-3 pb-3"><img class="m-auto" src="assets/img/banco-santander.png" alt="banco santander" width="99"></div>
+                              <div class="card col-12 col-md-2 mb-1 pt-3 pb-3"><img class="m-auto" src="assets/img/banco-scotiabank.png" alt="banco scotiabank" width="87"></div>
                          </div>
-                         <div class="row mt-2 mb-5 row-buttons">
+                         <div class="row mt-4 mb-5 row-buttons">
                               <a class="btn btn-primary mr-3" href="summary.html">Pagar</a>
                               <button class="btn btn-outline-secondary" disabled>Cancelar</button>
                          </div>
@@ -239,28 +243,28 @@
                </div>
           </div>
 
+          <!-- FOOTER -->
+          <footer id="footer">
+               <div class="container pt-4 d-flex justify-content-between">
+                    <div class="copyright">
+                    <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
+                    </div>
+                    <div class="logo">
+                         <img class="" src="./assets/img/logotipo-gray.svg" alt="" width="150">
+                         <p>©2020</p>
+                    </div>
+                    <div class="credits">
+                    <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
+                    </div>
+               </div>
+          </footer>
 
-  <footer id="footer">
-    <div class="container pt-4 d-flex justify-content-between">
-      <div class="copyright">
-        <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
-      </div>
-      <div class="logo">
-        <img class="" src="assets/img/logotipo-gray.svg" alt="" width="150">
-        <p>©2020</p>
-      </div>
-
-      <div class="credits">
-        <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
-      </div>
-    </div>
-  </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-  </body>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
+         <script src="./assets/js/main.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    </body>
 </html>
