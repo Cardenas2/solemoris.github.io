@@ -1,103 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/starter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>Socofar - Pago no realizado</title>
-  </head>
-  <body class="w-1200">
-    <header class="fixed-top bg-primary">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+     <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="assets/css/starter.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+          <title>Socofar - Pedidos</title>
+     </head>
+     <body>
+          <!-- HEADER  -->
+          <header class="fixed-top bg-primary">
+               <div class="container">
+               <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="index.html"><img class="mb-2" src="./assets/img/logotipo.svg" alt="" width="120"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                   <a class="nav-link nav-soc" href="portal.html">Home<span class="sr-only"></span></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link nav-soc" href="pedidos.html">Pedidos<span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link nav-soc" href="pagos.html">Historial de Pagos<span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item dropdown bg-primary">
+                                   <a class="nav-link nav-soc dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-cog mr-1"></i> Configuración
+                                   </a>
+                                   <div class="dropdown-menu bg-primary">
+                                        <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
+                                        <a class="dropdown-item" href="opciones.html">Agregar Correo</a>
+                                        <a class="dropdown-item" href="#">Salir</a>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+               </div>
+          </header>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="portal.html">Home <span class="sr-only"></span></a></li>
-              <li class="nav-item active"><a class="nav-link" href="pedidos.html">Pedidos <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="pagos.html">Historial de Pagos <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog mr-1"></i> Configuración</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="opciones.html">Cambiar Contraseña</a>
-                  <a class="dropdown-item" href="opciones.html">Agregar Correo</a>
-                  <a class="dropdown-item" href="#">Salir</a>
-                </div>
-              </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="portal-content d-flex">
-      <div class="row mx-auto">
-        <div class="col-lg-3 aos-init aos-animate text-center d-none d-lg-block mx-auto resume-content" data-aos="fade-right" data-aos-delay="100" data-aos="fade-left" >
-          <div class="card resume-content float-right">
-            <div class="card-header"><img src="./assets/img/mask-resume.svg" alt=""></div>
-            <div class="card-body">
-              <div class="card-text">
-                <span>Nombre Empresa</span> <p class="text-truncate">Clínica Alemana S.A</p>
-              </div>
-              <div class="card-text">
-                <span>RUT empresa</span> <p>96.770.100-9</p>
-              </div>
-              <div class="card-text">
-                <span>Correo Corporativo</span> <p class="text-truncate">finanzas@interno.clini...</p>
-              </div>
-              <div class="card-text">
-                <span class="text-primary">Deuda Total</span> <h4 class="mt-1">$100.000.000</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 col-lg-9 aos-init aos-animate content d-flex flex-column mt-1 mb-5 content-right mx-auto" data-aos="fade-up" data-aos-delay="100">
-          <h3>Pago no realizado</h3>
-          <h2>Intenta nuevamente</h2>
-          <div class="card card-content">
-            <div class="row d-flex flex-row px-5 pt-4 mb-0 justify-items-between  align-items-start mb-4">
-              <div class="col-12 text-center p-0">
-                <img class="mb-5 mt-3" src="./assets/img/Icon-Pago-no-realizado.svg" alt="">
-              </div>
-              <div class="col-12 text-center">
-                <p>Hubo un problema con tu transferencia.<br>
-                No se ha descontado ningún monto desde tu cuenta.<br>
-                Espera unos minutos e intenta nuevamente.</p>
-              </div>
-            </div>
+          <!--CONTENT-->
+          <div class="container soc-container">
+               <div class="col-12 py-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card card-content card-row mb-4">
+                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim, sequi et maxime delectus dignissimos nobis. Maiores ducimus suscipit deleniti saepe iusto incidunt dolorum eligendi similique, repellat, expedita quidem obcaecati!
+                              
+                    </div>
+               </div>
           </div>
 
-          <br>
-          <div class="row mt-2 mb-5 row-buttons">
-            <a class="btn btn-primary mr-3" href="portal.html"><i class="fas fa-reply ml-1"></i> Intentar Nuevamente </a>
-            <a class="btn btn-outline-primary" href="#">Cerrar Sesión</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER -->
-    <footer id="footer">
-         <div class="container pt-4 d-flex justify-content-between">
-              <div class="copyright">
-              <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
-              </div>
-              <div class="logo">
-                   <img class="" src="./assets/img/logotipo-gray.svg" alt="" width="150">
-                   <p>©2020</p>
-              </div>
-              <div class="credits">
-              <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
-              </div>
-         </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-  </body>
+          <!-- FOOTER -->
+          <footer id="footer">
+               <div class="container pt-4 d-flex justify-content-between">
+                    <div class="copyright">
+                    <!-- &copy; Copyright <strong><span>Socofar</span></strong>. All Rights Reserved -->
+                    </div>
+                    <div class="logo">
+                         <img class="" src="./assets/img/logotipo-gray.svg" alt="" width="150">
+                         <p>©2020</p>
+                    </div>
+                    <div class="credits">
+                    <!-- Designed by <a href="https://bootstrapmade.com/">Soledad Moris</a> -->
+                    </div>
+               </div>
+          </footer>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
+         <script src="./assets/js/main.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    </body>
 </html>
