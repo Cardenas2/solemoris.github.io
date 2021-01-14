@@ -177,19 +177,19 @@ span{
 }
 
 .bg-primary{
-  background: $socofar-primary_color !important;
+  background: $socofar-primary_color;
 }
 
 a.dropdown-item{
   color: $white !important;
 }
 a.dropdown-item:hover{
-  color: $socofar-primary_color !important;
+  color: $socofar-primary_color ;
 }
 .navbar-nav{
   padding-right: 30px;
   .nav-link, .navbar-expand-lg .navbar-nav .nav-link{
-     margin: 0 22px !important;
+     margin: 0 22px ;
   }
 }
 ul > li.nav-item.dropdown.show > div > a:hob
@@ -407,7 +407,9 @@ body {
 // }
 
 .nav-link.active{
-  background-color: $socofar-primary_color !important}
+  background-color:rgba($color: #fafafa, $alpha: 1.0); 
+  color:$body-color;
+}
 
 
 /*--------------------------------------------------------------
@@ -1069,3 +1071,4 @@ section {
 .card-row {
      padding: 10px 30px 10px;
 }
+

@@ -7,6 +7,7 @@
 	border-radius: $card-r;
 }
 
+
 .card .card-body hr{
 	margin-left: -20px;
 	margin-right: -20px;
@@ -68,4 +69,23 @@
 }
 .accordion>.card:not(:last-of-type),.accordion>.card:not(:first-of-type){
 	border-radius: 10px !important;
+}
+
+.card.card-grey{
+	background-color:rgb(192, 190, 190, 0.2);
+}
+.nav-link-b{
+	height: 80px;
+	padding:20px;
+	border-bottom: 1px solid #d3d2d2;
+}
+.nav-pills .nav-link-b.active, .nav-pills .show > .nav-link {
+	color:$body-color;
+	font-weight: 600;
+	width:300px;
+	background-color: #fff;
+}
+.sub-link{
+	padding-left:3em;
+	color:rgba($body-color, 0.5);
 }
