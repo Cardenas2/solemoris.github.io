@@ -176,15 +176,15 @@ span{
 	line-height: 20px;
 }
 
-.bg-primary{
-  background: $socofar-primary_color;
+.bg-primary{ 
+  background: $socofar-primary_color !important;
 }
 
 a.dropdown-item{
   color: $white !important;
 }
 a.dropdown-item:hover{
-  color: $socofar-primary_color ;
+  color: $socofar-primary_color !important;
 }
 .navbar-nav{
   padding-right: 30px;

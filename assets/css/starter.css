@@ -10709,7 +10709,7 @@ span {
 }
 
 .bg-primary {
-  background: #085CB9;
+  background: #085CB9 !important;
 }
 
 a.dropdown-item {
@@ -10717,7 +10717,7 @@ a.dropdown-item {
 }
 
 a.dropdown-item:hover {
-  color: #085CB9;
+  color: #085CB9 !important;
 }
 
 .navbar-nav {
