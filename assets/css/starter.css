@@ -10505,6 +10505,9 @@ button:focus {
   box-sizing: border-box;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0px;
 }
 
 .card .card-body hr {
@@ -10576,19 +10579,27 @@ button:focus {
 
 .card.card-grey {
   background-color: rgba(192, 190, 190, 0.2);
+  border-right: none;
 }
 
 .nav-link-b {
   height: 80px;
   padding: 20px;
   border-bottom: 1px solid #d3d2d2;
+  z-index: 100;
+}
+
+.nav-link-b:last-child {
+  border-bottom: 0px;
 }
 
 .nav-pills .nav-link-b.active, .nav-pills .show > .nav-link {
   color: #4A5056;
   font-weight: 600;
-  width: 300px;
+  width: 285px;
+  border-right: 0;
   background-color: #fff;
+  z-index: 100;
 }
 
 .sub-link {
