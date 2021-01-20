@@ -10607,6 +10607,10 @@ button:focus {
   color: rgba(74, 80, 86, 0.5);
 }
 
+div#v-pills-tabContent {
+  border-top-left-radius: 0 !important;
+}
+
 label {
   font-family: "Roboto";
   font-style: normal;
