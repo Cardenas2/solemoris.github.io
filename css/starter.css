@@ -10442,7 +10442,7 @@ button:focus {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #4A5056;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
@@ -10505,9 +10505,6 @@ button:focus {
   box-sizing: border-box;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: 0px;
 }
 
 .card .card-body hr {
@@ -10578,37 +10575,7 @@ button:focus {
 }
 
 .card.card-grey {
-  background-color: rgba(192, 190, 190, 0.2);
-  border-right: none;
-}
-
-.nav-link-b {
-  height: 80px;
-  padding: 20px;
-  border-bottom: 1px solid #d3d2d2;
-  z-index: 100;
-}
-
-.nav-link-b:last-child {
-  border-bottom: 0px;
-}
-
-.nav-pills .nav-link-b.active, .nav-pills .show > .nav-link {
-  color: #4A5056;
-  font-weight: 600;
-  width: 285px;
-  border-right: 0;
-  background-color: #fff;
-  z-index: 100;
-}
-
-.sub-link {
-  padding-left: 3em;
-  color: rgba(74, 80, 86, 0.5);
-}
-
-div#v-pills-tabContent {
-  border-top-left-radius: 0 !important;
+  background-color: green;
 }
 
 label {
@@ -10739,7 +10706,7 @@ a.dropdown-item:hover {
   padding-right: 30px;
 }
 .navbar-nav .nav-link, .navbar-nav .navbar-expand-lg .navbar-nav .nav-link {
-  margin: 0 22px;
+  margin: 0 22px !important;
 }
 
 ul > li.nav-item.dropdown.show > div > a:hob .navbar-dark .navbar-nav .nav-link.nav-soc {
@@ -10874,8 +10841,7 @@ body {
 }
 
 .nav-link.active {
-  background-color: #fafafa;
-  color: #4A5056;
+  background-color: #085CB9 !important;
 }
 
 /*--------------------------------------------------------------
@@ -11510,4 +11476,8 @@ section {
 
 .card-row {
   padding: 10px 30px 10px;
+}
+
+.card-grey {
+  background-color: red;
 }

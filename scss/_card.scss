@@ -5,7 +5,12 @@
 	box-sizing: border-box;
 	box-shadow: $card-box;
 	border-radius: $card-r;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 0px;
+	
 }
+
 
 .card .card-body hr{
 	margin-left: -20px;
@@ -28,9 +33,9 @@
 		padding: 0 5px;
 		margin: 0;
 	}
-	.form-group label{
-		//padding-bottom: 7px;
-	}
+	// .form-group label{
+	// 	//padding-bottom: 7px;
+	// }
 
 }
 .card-list{
@@ -69,3 +74,35 @@
 .accordion>.card:not(:last-of-type),.accordion>.card:not(:first-of-type){
 	border-radius: 10px !important;
 }
+
+.card.card-grey{
+	background-color:rgb(192, 190, 190, 0.2);
+	border-right: none;
+	
+}
+.nav-link-b{
+	height: 80px;
+	padding:20px;
+	border-bottom: 1px solid #d3d2d2;
+	z-index: 100;
+}
+.nav-link-b:last-child{
+	border-bottom:0px;
+}
+.nav-pills .nav-link-b.active, .nav-pills .show > .nav-link {
+	color:$body-color;
+	font-weight: 600;
+	width:285px;
+	border-right:0;
+	background-color: #fff;
+	z-index: 100;
+	
+}
+.sub-link{
+	padding-left:3em;
+	color:rgba($body-color, 0.5);
+}
+div#v-pills-tabContent {
+    border-top-left-radius: 0 !important;
+}
+  
